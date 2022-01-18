@@ -17,6 +17,7 @@ public class CU1353 {
 }
 
 //Solution of wYuYw
+/*
 import java.util.Scanner;
 
 public class Main {
@@ -30,3 +31,4 @@ public class Main {
         }
     }
 }
+*/
