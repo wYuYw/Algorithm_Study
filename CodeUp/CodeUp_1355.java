@@ -1,4 +1,5 @@
 //1355 : 삼각형 출력하기 3
+//"너무 멋있는 코드!" by wYuYw
 
 import java.util.Scanner;
 
