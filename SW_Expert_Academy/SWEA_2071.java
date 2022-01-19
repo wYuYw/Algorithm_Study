@@ -25,6 +25,7 @@ public class SWEA2071 {
 
 
 //Solution by wYuYw
+/*
 import java.util.Scanner;
 import java.lang.Math;
  
@@ -47,3 +48,4 @@ class Solution
         }
     }
 }
+*/
