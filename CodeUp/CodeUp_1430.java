@@ -30,29 +30,7 @@ public class Main {
     }
 }
 
-//Solution02 by wYuYw; 전역변수 선언 후 인덱스 비교(빈도 카운팅) - 시간초과
-import java.util.Scanner;
-
-public class Main {
-    static int[] arr_N = new int[10000000];
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        for(int i=0; i<N; i++) {
-             int temp = sc.nextInt();
-             arr_N[temp] = temp;
-        }
-        int M = sc.nextInt();
-
-        for(int i=0; i<M; i++) {
-            int temp = sc.nextInt();
-            if(arr_N[temp]==0) System.out.print("0 ");
-            else System.out.printf("1 ");
-        }
-    }
-}
-
-//Solution03 by wYuYw; Hashmap 사용 - 시간초과
+//Solution02 by wYuYw; Hashmap 사용 - 시간초과
 import java.util.Scanner;
 import java.util.HashMap;
 
@@ -75,6 +53,51 @@ public class Main {
         	else
         		System.out.print("0");
         	System.out.print(" ");
+        }
+    }
+}
+
+//Solution03 by wYuYw; 전역변수 선언 후 인덱스 비교(빈도 카운팅) - 시간초과
+import java.util.Scanner;
+
+public class Main {
+    static int[] arr_N = new int[10000000];
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        for(int i=0; i<N; i++) {
+             int temp = sc.nextInt();
+             arr_N[temp] = temp;
+        }
+        int M = sc.nextInt();
+
+        for(int i=0; i<M; i++) {
+            int temp = sc.nextInt();
+            if(arr_N[temp]==0) System.out.print("0 ");
+            else System.out.printf("1 ");
+        }
+    }
+}
+
+
+//Solution04 by wYuYw; 전역변수 선언 후 인덱스 비교(빈도 카운팅, int가 아닌 boolean으로)
+import java.util.Scanner;
+
+public class Main {
+    static boolean[] arr_N = new boolean[10000000];
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        for(int i=0; i<N; i++) {
+             int temp = sc.nextInt();
+             arr_N[temp] = true;
+        }
+        int M = sc.nextInt();
+
+        for(int i=0; i<M; i++) {
+            int temp = sc.nextInt();
+            if(arr_N[temp]==false) System.out.print("0 ");
+            else System.out.print("1 ");
         }
     }
 }
