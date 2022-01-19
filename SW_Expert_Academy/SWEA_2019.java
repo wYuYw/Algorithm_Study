@@ -16,3 +16,24 @@ public class SWEA2019 {
 		}
 	}
 }
+
+
+//Solution by wYuYw
+/*
+import java.util.Scanner;
+ 
+class Solution
+{
+    public static void main(String args[]) throws Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        int N=sc.nextInt();
+ 
+        for(int i = 0; i <= N; i++)
+        {
+            int ans = (int)Math.pow(2, i);
+            System.out.printf("%d ", ans);
+        }
+    }
+}
+*/
