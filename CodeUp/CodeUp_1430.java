@@ -30,7 +30,7 @@ public class Main {
     }
 }
 
-//Solution02 by wYuYw; 전역변수 선언 후 인덱스 비교 - 시간초과
+//Solution02 by wYuYw; 전역변수 선언 후 인덱스 비교(빈도 카운팅) - 시간초과
 import java.util.Scanner;
 
 public class Main {
