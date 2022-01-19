@@ -14,3 +14,24 @@ public class SWEA2050 {
 		}
 	}
 }
+
+
+//Solution by wYuYw
+/*
+import java.util.Scanner;
+ 
+class Solution
+{
+    public static void main(String args[]) throws Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
+        char[] arr = str.toCharArray();
+         
+        for(int i = 0; i < arr.length; i++)
+        {
+            System.out.printf(arr[i]-64+" ");
+        }
+    }
+}
+*/
