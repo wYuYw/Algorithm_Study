@@ -17,3 +17,23 @@ public class Main {
         }
     }
 }
+
+
+/* by SonMinji
+import java.util.Scanner;
+
+public class CU1402 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int cnt = sc.nextInt();
+
+		int[] numArr = new int[cnt];
+		for(int i=1; i<=cnt; i++) {
+			numArr[cnt-i] = sc.nextInt();	
+		}
+		for(int i=0; i<cnt; i++) {
+			System.out.printf("%d ", numArr[i]);
+		}
+	}
+}
+*/
