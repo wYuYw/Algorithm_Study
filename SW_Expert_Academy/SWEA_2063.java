@@ -23,3 +23,27 @@ public class SWEA2063 {
 		System.out.println(arr[mid]);
 	}
 }
+
+
+//Solution by wYuYw
+/*
+import java.util.Scanner;
+import java.util.Arrays;
+ 
+class Solution
+{
+    public static void main(String args[]) throws Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        int N=sc.nextInt();
+        int nums[] = new int[N];
+         
+        for (int i=0; i<N; i++) {
+            nums[i] = sc.nextInt();
+        }
+        Arrays.sort(nums);
+         
+        System.out.println(nums[N/2]);
+    }
+}
+*/
