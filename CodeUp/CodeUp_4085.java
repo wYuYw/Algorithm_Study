@@ -36,3 +36,43 @@ public class CU4085 {
 		System.out.println(maxSum);
 	}
 }
+
+
+//Solution by wYuYw
+/*
+import java.util.Scanner;
+ 
+public class App {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        int[][] land = new int[n][m];
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int ans = 0;
+        
+        //Form land
+        for(int i=0; i<n; i++) {
+            for(int j=0; j<m; j++) {
+                land[i][j] = sc.nextInt();
+            }
+        }
+
+        //Masking
+        for(int i=0; i<=(n-y); i++) {
+            for(int j=0; j<=(m-x); j++) {
+                int ka = 0;
+                for(int p=0; p<y; p++) {
+                    for(int q=0; q<x; q++) {
+                        ka += land[i+p][j+q];
+                    }
+                }
+                ans = Math.max(ans, ka);
+            }
+        }
+
+        System.out.println(ans);
+    }
+}
+*/
