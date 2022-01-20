@@ -31,3 +31,30 @@ public class Main {
         }
     }
 }
+
+
+/*
+// by SonMinji
+import java.util.Scanner;
+
+public class CU1411 {
+	// 주어진 카드 묶음에서 빠진 하나의 카드를 찾아서 그 번호를 출력
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		
+		int[] arr = new int[N];
+		for(int i=1; i<N; i++) {
+			int num = sc.nextInt();
+			arr[num-1] = 1;
+		}
+		int c=1;
+		for(int e : arr) {
+			if(e==0) {
+				System.out.println(c);
+			}
+			c++;
+		}
+	}
+}
+*/
