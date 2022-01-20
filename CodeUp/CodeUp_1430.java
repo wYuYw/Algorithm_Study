@@ -101,3 +101,21 @@ public class Main {
         }
     }
 }
+
+
+//Solution by Pro.Hong; 인덱스 비교(빈도 카운팅, int가 아닌 boolean으로) + StringBuilder(계속해서 읽는 것이 아니라 한번에 모아놨다가 출력)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        boolean[] arr = new boolean[10000001];
+        int N = sc.nextInt();
+        for(int i=0; i<N; i++) arr[sc.nextInt()] = true;
+        int M = sc.nextInt();
+        StringBuilder sb = new StringBuilder();
+        
+        for(int i=0; i<M; i++) sb.append(arr[sc.nextInt()]?1:0).append(" ");
+        System.out.println(sb);
+    }
+}
