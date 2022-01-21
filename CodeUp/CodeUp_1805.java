@@ -35,6 +35,7 @@ class Main {
 
 
 //Solution02 by wYuYw - index counter 사용
+/*
 import java.util.Scanner;
 
 class Main {
@@ -53,3 +54,4 @@ class Main {
         }
     }
 }
+*/
