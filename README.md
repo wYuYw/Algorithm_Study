@@ -14,4 +14,5 @@ Sharing and studying algorithm problem solvings
 // CodeUp 함수 문제풀이 완료
 
 3. 01/23(일)~
+// CodeUp 구조체 문제풀이 완료
 // SWEA Level02 문제풀이 다시 시작
