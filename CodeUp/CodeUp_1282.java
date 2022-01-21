@@ -4,7 +4,6 @@
 
 import java.util.Scanner;
 
-// 제곱수 만들기
 public class CU1282 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
