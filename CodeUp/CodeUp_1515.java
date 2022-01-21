@@ -29,10 +29,11 @@ public class Main {
 
         for(int i=1; i<26; i++) {
             for(int j=1; j<26; j++) {
-                if(numAround(i, j, arr)<=1 || numAround(i, j, arr)>=4) next[i-1][j-1] = 0;
-                else if(numAround(i, j, arr)==2 || numAround(i, j, arr)==3) {
+                int count = numAround(i, j, arr);
+                if(count<=1 || count>=4) next[i-1][j-1] = 0;
+                else if(count==2 || count==3) {
                     if(arr[i][j]==1) next[i-1][j-1] = 1;
-                    if(numAround(i, j, arr)==3) next[i-1][j-1] = 1;
+                    if(count==3) next[i-1][j-1] = 1;
                 }
             }
         }
