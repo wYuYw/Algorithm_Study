@@ -1,6 +1,6 @@
 // 11586. 지영 공주님의 마법 거울
 
-// by SonMinji
+// by SonMinji_220122
 
 import java.util.Scanner;
 
