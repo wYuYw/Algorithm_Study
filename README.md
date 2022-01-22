@@ -7,7 +7,7 @@ Sharing and studying algorithm problem solvings
 
 ### wYuYw
 1. ~01/22(토)
-// SWEA 파이썬 기초 복습
+// SWEA Java 기초 복습
 // CodeUp 구조체 문제풀이 완료
 
 2. ~01/23(일)
