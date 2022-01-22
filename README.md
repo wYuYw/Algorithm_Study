@@ -6,12 +6,27 @@ Sharing and studying algorithm problem solvings
 ## ~01/30(일) 학습 계획
 
 ### wYuYw
-1. ~01/22(토)
-// SWEA Java 기초 복습
-// CodeUp 구조체 문제풀이 완료
 
-2. ~01/23(일)
+1. ~01/23(일)
 // Mon 시험 대비 복습; 조건문, 반복문, 배열, 클래스
 
-3. ~01/24(월)
-// SWEA Level02 문제풀이 다시 시작
+2. ~01/24(월)
+// SWEA Level02 ~1284
+
+3. ~01/25(화)
+// SWEA Level02 ~1979
+
+4. ~01/26(수)
+// SWEA Level02 ~1285
+
+5. ~01/27(목)
+// SWEA Level02 ~1926
+
+6. ~01/28(금)
+// SWEA Level02 ~1859
+
+7. ~01/29(토)
+// CodeUp 구조체 풀이 완료
+
+8. ~01/30(일)
+// Python 알고리즘 기초 학습
