@@ -20,3 +20,40 @@ public class CU1419 {
 		System.out.println(cnt);
 	}
 }
+
+
+//Solution01 by wYuYw - Java
+/*
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class Main {
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		String word = br.readLine();
+		String key = "love";
+		int cnt = 0;
+		
+		for(int i=0; i<word.length()-3; i++) {
+			if(word.substring(i, i+4).equals(key)) cnt++;
+		}
+		bw.write(Integer.toString(cnt));
+		bw.flush();
+	}
+}
+*/
+
+
+//Solution02 by wYuYw - Python
+/*
+N = input()
+cnt = 0
+
+cnt = N.count("love")
+
+print(cnt)
+*/
