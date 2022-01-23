@@ -26,3 +26,36 @@ public class Main {
         }
     }
 }
+
+
+// by SonMinji_220123
+/*
+import java.util.Scanner;
+
+public class CU1508 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+		
+		int[][] arr = new int [N][N];
+		for(int num=0; num<N; num++) {
+			arr[num][0] = sc.nextInt();
+		}
+		
+		for(int r=1; r<N; r++) {
+			for(int c=1; c<=r; c++) {
+				arr[r][c] = arr[r][c-1] - arr[r-1][c-1];
+			}
+		}
+		
+		for(int i=0; i<N; i++) {
+			for(int j=0; j<=i; j++) {
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+	}
+}
+*/
