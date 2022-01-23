@@ -28,7 +28,7 @@ public class CU1082 {
 
 
 //Solution by wYuYw
-
+/*
 import java.util.Scanner;
 
 public class Main {
@@ -41,3 +41,4 @@ public class Main {
 		}
 	}
 }
+*/
