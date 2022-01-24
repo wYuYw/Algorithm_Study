@@ -8,7 +8,7 @@ Sharing and studying algorithm problem solvings
 ### wYuYw
 
 1. ~01/25(화)
-// SWEA Level02 1928
+// SWEA Level02 1928, 1284~
 
 2. ~01/26(수)
 // SWEA Level02 ~1285
