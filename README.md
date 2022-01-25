@@ -24,3 +24,39 @@ Sharing and studying algorithm problem solvings
 
 6. ~01/30(일)
 // Python 알고리즘 기초 학습
+
+
+
+### 코드 고민
+
+1. MovieManager에서 저희가 만든 list에 값이 없을 때(해당 title의 영화가 없을 때) 예외구문을 만들어야해요.
+
+public ArrayList searchByTitle(String title) throws MovieNotFoundException {
+		ArrayList<Movie> result = new ArrayList<Movie>();
+		for(int i=0; i<size; i++) {
+			if(movies[i].getTitle().equals(title)) {
+				result.add(movies[i]);
+			}
+		}
+		if(result.isEmpty()) throw new MovieNotFoundException();
+		else return result;
+	}
+
+2. MovieTest에서 movie3를 array가 아니라 arraylist로 선언
+                         
+System.out.println("-------------");
+		ArrayList<Movie> movie3 = new ArrayList<Movie>();
+		
+		try {
+			movie3 = mm.searchByTitle("Hello");
+			
+			for( Movie m : movie3) {
+				System.out.println(m);
+			}
+		} catch (MovieNotFoundException e) {
+			// TODO Auto-generated catch block
+//			e.printStackTrace();
+			System.out.println("검색결과가 없습니다.");
+		}
+
+3. 성공!!
