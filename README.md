@@ -42,21 +42,10 @@ public ArrayList searchByTitle(String title) throws MovieNotFoundException {
 		else return result;
 	}
 
+				     
 2. MovieTest에서 movie3를 array가 아니라 arraylist로 선언
                          
-System.out.println("-------------");
-		ArrayList<Movie> movie3 = new ArrayList<Movie>();
-		
-		try {
-			movie3 = mm.searchByTitle("Hello");
-			
-			for( Movie m : movie3) {
-				System.out.println(m);
-			}
-		} catch (MovieNotFoundException e) {
-			// TODO Auto-generated catch block
-//			e.printStackTrace();
-			System.out.println("검색결과가 없습니다.");
-		}
+ArrayList<Movie> movie3 = new ArrayList<Movie>();
 
+	
 3. 성공!!
