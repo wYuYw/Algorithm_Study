@@ -7,20 +7,13 @@ Sharing and studying algorithm problem solvings
 
 ### wYuYw
 
-1. ~01/25(화)
-// SWEA Level02 1928, 1284~
+1. ~01/26(수)
+// SWEA Level02 1928, 1959~
 
-2. ~01/26(수)
-// SWEA Level02 ~1285
+2. ~01/27(목)
+// SWEA Level02 ~1940
 
-3. ~01/27(목)
-// SWEA Level02 ~1926
 
-4. ~01/28(금)
-// SWEA Level02 ~1859
-
-5. ~01/29(토)
+// SWEA Level02 문제풀이 완료
 // CodeUp 구조체 풀이 완료
-
-6. ~01/30(일)
-// Python 알고리즘 기초 학습
+// Python 알고리즘 기초 학습 시작
