@@ -24,3 +24,19 @@ ArrayList<Movie> movie3 = new ArrayList<Movie>();
 // 4. 성공!!
 // 출력
 // title "Hello"에 해당하는 값 잘 나옴; Movie [id=1, title=Hello, director=SSAFY, genre=Action, runningTime=100]
+
+
+
+// 출력부분
+
+try {
+			movie3 = mm.searchByTitle("Hello");
+			
+			for( Movie m : movie3) {
+				System.out.println(m);
+			}
+		} catch (MovieNotFoundException e) {
+			// TODO Auto-generated catch block
+//			e.printStackTrace();
+			System.out.println("검색결과가 없습니다.");
+		}
