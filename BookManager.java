@@ -91,17 +91,17 @@ public class BookManager implements IBookManager {
 				}
 			}
 			this.bookList.remove(idx);
-      //this.bookList.remove(bookList.get(idx)); 이것도 가능
+			//this.bookList.remove(bookList.get(idx)); 이것도 가능
 			
 			// solution02 _ for문에서 삭제
-//		for(int i = this.bookList.size()-1; i>=0; i--) {
-//      
-//		}
+//			for(int i = this.bookList.size()-1; i>=0; i--) {
+//			
+//			}
 
-      // solution03 _ for문에서 삭제  idx-- 
-//		for(int i=0; i<this.bookList.size(); i++) {
-//
-//		}
+			// solution03 _ for문에서 삭제  idx-- 
+//			for(int i=0; i<this.bookList.size(); i++) {
+//			
+//			}
 			
 		}
 	  
