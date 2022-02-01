@@ -3,8 +3,9 @@ Sharing and studying algorithm problem solvings
 
 화이팅 화이팅
 
-// SWEA Level02 1940 문제 이상
+## 문제 이슈
+- SWEA Level02 1940 문제 오류
 
-// SWEA Level02 문제풀이 완료
-// CodeUp 구조체 풀이 완료
-// Python 알고리즘 기초 학습 시작
+## 문제 풀이 계획
+- CodeUp 구조체 풀이 완료
+- Python 알고리즘 기초 학습 시작
