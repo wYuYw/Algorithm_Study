@@ -7,5 +7,4 @@ Sharing and studying algorithm problem solvings
 - SWEA Level02 1940 문제 오류
 
 ## 문제 풀이 계획
-- CodeUp 구조체 풀이 완료
 - Python 알고리즘 기초 학습 시작
