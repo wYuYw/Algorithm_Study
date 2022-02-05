@@ -31,3 +31,53 @@ public class Main {
         }
     }
 }
+
+
+
+// by SonMinji_220205
+/*
+import java.util.Scanner;
+
+public class CU1510 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		int[][] arr = new int[n][n];
+		int num = 0;
+		int r = 0;
+		int c = n/2;
+        
+		while(num < n*n) {
+
+			arr[r][c] = ++num;
+			
+			if(num % n != 0) {
+				if(r == 0) {
+					r = n-1;
+				} else {
+					r = r-1;
+				}
+			} else {
+				r = r+1;
+			}
+			
+			if(num % n != 0) {
+				if(c == n-1) {
+					c = 0;
+				} else {
+					c = c+1;
+				}
+			} 
+			
+		}
+		
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+*/
