@@ -1,7 +1,3 @@
-# Baekjoon_1063
-
-# Solution by wYuYw
-
 king_init, stone_init, n = input().split()
 
 king_row = 8 - int(king_init[1]) + 1
