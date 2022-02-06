@@ -1,3 +1,3 @@
-# Baekjoon_10798.py
+# Baekjoon_10798
 
 # Solution by wYuYw
