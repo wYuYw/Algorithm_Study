@@ -50,3 +50,57 @@ class Solution
         bw.close();
 	}
 }
+
+
+
+// by SonMinji_220219
+/*
+import java.util.Scanner;
+
+public class SWEA_D2_1945 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		for(int tcNum=1; tcNum<=T; tcNum++) {
+			int N = sc.nextInt();
+			StringBuilder sb = new StringBuilder();
+			while(N != 1) {
+				int cnt = 0;
+				while(N % 2 == 0) {
+					N = N/2;
+					cnt++;
+				}
+				sb.append(" "+cnt);
+				cnt = 0;
+				while(N % 3 == 0) {
+					N = N/3;
+					cnt++;
+				}	
+				sb.append(" "+cnt);
+				cnt = 0;
+				while(N % 5 == 0) {
+					N = N/5;
+					cnt++;
+				}
+				sb.append(" "+cnt);
+				cnt = 0;
+				while(N % 7 == 0) {
+					N = N/7;
+					cnt++;
+				}
+				sb.append(" "+cnt);
+				cnt = 0;
+				while(N % 11 == 0) {
+					N = N/11;
+					cnt++;
+				}
+				sb.append(" "+cnt);
+			}
+			
+			String result = sb.toString();
+			System.out.printf("#%d%s\n", tcNum, result);
+		}
+	}
+}
+
+*/
