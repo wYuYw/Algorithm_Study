@@ -35,3 +35,29 @@ class Solution
         bw.close();
 	}
 }
+
+
+
+// by SonMinji_220219
+
+/*
+import java.util.Scanner;
+
+public class SWEA_D2_1986 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		
+		for(int tcNum=1; tcNum<=T; tcNum++) {
+			int N = sc.nextInt();
+			int sum = 0;
+			int sign = 1;
+			for(int i=1; i<=N; i++) {
+				sum += sign*i;
+				sign *= -1;
+			}
+			System.out.printf("#%d %d\n", tcNum, sum);
+		}
+	}
+}
+*/
