@@ -89,3 +89,41 @@ class Solution
 	}
 }
 */
+
+
+// by SonMinji_220219
+/*
+import java.util.Scanner;
+
+public class SWEA_D2_1288 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		
+		for(int tcNum=1; tcNum<=T; tcNum++) {
+			String N = sc.next();
+			boolean[] checkArr = new boolean[10];
+			int cnt = 1;
+			boolean check = true;
+			while(check) {
+				for(int i=0; i<N.length(); i++) {
+					checkArr[N.charAt(i)-'0'] = true;
+				}
+				int n = Integer.parseInt(N);
+				for(int i=0; i<10; i++) {
+					if(!checkArr[i]) { 
+						check = true;
+						cnt++;
+						n = n/(cnt-1)*cnt;
+						N = Integer.toString(n);
+						break;
+					}
+					check = false;
+					N = Integer.toString(n);
+				}
+			}
+			System.out.printf("#%d %s\n", tcNum, N);
+		}
+	}
+}
+*/
