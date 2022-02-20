@@ -72,3 +72,42 @@ public class SWEA_D2_1954 {
 		}
 	}
 }
+
+// Solution by wYuYw
+
+import java.util.Scanner;
+
+class Practice {
+	public static void main(String args[]) throws Exception {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		for(int tc = 1; tc <= T; tc++) {
+			// initialize
+			int n = sc.nextInt();
+			int[][] matrix = new int[n][n];
+			
+			// right, down, left, up
+			int[] dirRow = {0, 1, 0, -1};
+			int[] dirCol = {1, 0, -1, 0};
+			int row = 0, col = 0, dir = 0;
+			// find result
+			for(int num = 1; num <= n*n; num++) {
+				matrix[row][col] = num;
+				row += dirRow[dir]; col += dirCol[dir];
+				// change direction at boundary condition
+				if(row < 0 || row >= n || col < 0 || col >= n || matrix[row][col] != 0) {
+					row -= dirRow[dir]; col -= dirCol[dir];
+					dir = (dir + 1) % 4;
+					row += dirRow[dir]; col += dirCol[dir];
+				}
+			}
+			
+			// print result
+			System.out.println("#" + tc);
+			for(int r = 0; r < n; r++) {
+				for(int c = 0; c < n; c++) System.out.print(matrix[r][c] + " ");
+				System.out.println();
+			}
+		}
+	}
+}
