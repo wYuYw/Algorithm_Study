@@ -35,7 +35,7 @@ public class SWEA_D3_2805 {
 }
 
 
-// Solution by wYuYw
+// Solution_01 by wYuYw - upper and lower triangles
 
 import java.util.Scanner;
  
@@ -71,4 +71,39 @@ class Solution {
             System.out.printf("#%d %d%n", test_case, result);
         }
     }
+}
+
+
+// Solution_02 by wYuYw - distance
+
+import java.util.Scanner;
+import java.lang.Math;
+
+class Solution {
+	public static void main(String args[]) throws Exception {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		for(int tc = 1; tc <= T; tc++) {
+			// initialize
+			int n = sc.nextInt();
+			int[][] matrix = new int[n][n];
+			for(int r = 0; r < n; r++) {
+				String number = sc.next();
+				for(int c = 0; c < n; c++) matrix[r][c] = number.charAt(c) - '0';
+			}
+			
+			// find result by using distance method
+			int center = n / 2;
+			int result = 0;
+			for(int r = 0; r < n; r++) {
+				for(int c = 0; c < n; c++) {
+					if(Math.abs(r - center) + Math.abs(c - center) <= center) {
+						result += matrix[r][c];
+					}
+				}
+			}
+			// print result
+			System.out.println("#" + tc + " " + result);
+		}
+	}
 }
