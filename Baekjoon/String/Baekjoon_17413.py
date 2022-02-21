@@ -1,6 +1,6 @@
 # Baekjoon_17413 단어 뒤집기 2
 
-# Solution by wYuYw
+# Solution_01 by wYuYw
 
 import sys
 input = sys.stdin.readline
@@ -35,3 +35,31 @@ for t in temp[::-1]:
     result.append(t)
 
 print(''.join(result))
+
+
+# Solution_02 vy wYuYw - Using stack
+
+ans = ""
+tag = False
+stack = ""
+for i in input():
+    if i == "<":
+        tag = True
+        ans += stack[::-1]
+        stack = ""
+        ans += i
+        continue
+    elif i == ">":
+        tag = False
+        ans += i
+        continue
+    elif i == " ":
+        ans += stack[::-1] + " "
+        stack = ""
+        continue
+        
+    if tag:
+        ans += i
+    else:
+        stack += i
+print(ans+stack[::-1])
