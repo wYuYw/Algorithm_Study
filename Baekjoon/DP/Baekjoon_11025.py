@@ -1,6 +1,6 @@
 # Baekjoon_11025 요세푸스 문제 3
 
-# Solution_01 by wYuYw
+# Solution_01 by wYuYw - 시간초과
 
 import sys
 input = sys.stdin.readline
