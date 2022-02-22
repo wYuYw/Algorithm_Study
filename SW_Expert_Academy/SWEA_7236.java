@@ -1,6 +1,7 @@
 // 7236. 저수지의 물의 총 깊이 구하기
 
 // Solution by wYuYw
+// for문으로 코드 간소화 가능; for(int d = 0; d < 8; d++), if(nx >= 0 && nx < n && ny >= 0 && ny < n && reservoir[nx][ny])
 
 import java.util.Scanner;
 
