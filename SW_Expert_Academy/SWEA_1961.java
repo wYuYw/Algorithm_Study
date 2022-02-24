@@ -45,7 +45,7 @@ class Solution {
 
 
 
-// by SonMinji_220222
+// Solution01 by SonMinji_220222
 /*
 import java.util.Scanner;
 
@@ -103,5 +103,56 @@ public class SWEA_D2_1961 {
 
 		}
 	}
+}
+*/
+
+
+// Solution02 by smj227b_220224 - 메서드 생성
+/*
+import java.util.Scanner;
+ 
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+         
+        for (int tcNum = 1; tcNum <= T; tcNum++) {
+            int N = sc.nextInt();
+            int[][] arr = new int[N][N];
+            for (int i = 0; i < N; i++) {
+                for (int j = 0; j < N; j++) {
+                    arr[i][j] = sc.nextInt();
+                }
+            }
+ 
+            String[][] result = new String[N][3];
+            for(int i=0; i<3; i++) {
+                arr = spin(arr, N, result, i);
+            }
+         
+            System.out.println("#"+tcNum);
+            for(int i=0; i<N; i++) {
+                for(int j=0; j<3; j++) {
+                    System.out.print(result[i][j]+" ");
+                }
+                System.out.println();
+            }
+        }
+    }
+ 
+    public static int[][] spin(int[][] originArr, int N, String[][] resultArr, int C) {
+        int[][] spinArr = new int[N][N];
+         
+        for (int c = 0; c < N; c++) {
+            StringBuilder sb = new StringBuilder();
+            for (int r = N - 1; r >= 0; r--) {
+                spinArr[c][N-1-r] = originArr[r][c];
+                sb.append(originArr[r][c]);
+            }
+            String val = sb.toString();
+            resultArr[c][C] = val;
+        }
+        return spinArr;
+    }
 }
 */
