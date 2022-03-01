@@ -24,3 +24,35 @@ class Solution {
 		}
 	}
 }
+
+
+
+// by SonMinji_220301
+/*
+import java.util.Scanner;
+
+public class SWEA_D3_7087 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+        
+		for(int tcNum=1; tcNum<=T; tcNum++) {
+			int N = sc.nextInt();
+			boolean[] check = new boolean[26];
+			for(int i=0; i<N; i++) {
+				check[sc.next().charAt(0)-'A'] = true;
+			}
+
+			int cnt = 0;
+			for(int i=0; i<26; i++) {
+				if(!check[i]) {
+					break;
+				}
+				cnt++;
+			}
+			
+			System.out.printf("#%d %d\n", tcNum, cnt);
+		}
+	}
+}
+*/
