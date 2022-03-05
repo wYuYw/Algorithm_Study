@@ -38,3 +38,39 @@ class Solution {
 		}
 	}
 }
+
+
+
+// by SonMinji_220305
+/*
+import java.util.Scanner;
+
+public class SWEA_D3_7272 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		for(int tcNum=1; tcNum<=T; tcNum++) {
+			String str1 = sc.next();
+			String str2 = sc.next();
+			String[] hole = {"CEFGHIJKLMNSTUVWXYZ", "ADOPQR", "B"};
+
+			String result = "SAME";
+			if(str1.length() == str2.length()) {
+				String str1Hole = "";
+				String str2Hole = "";
+				for(int i=0; i<str1.length(); i++) {
+					for(int idx=0; idx<hole.length; idx++) {
+						str1Hole = hole[idx].contains(str1.substring(i, i+1)) ? str1Hole+idx : str1Hole;
+						str2Hole = hole[idx].contains(str2.substring(i, i+1)) ? str2Hole+idx : str2Hole;
+					}
+				}
+				result = str1Hole.equals(str2Hole) ? result : "DIFF";
+			} else {
+				result = "DIFF";
+			}
+			
+			System.out.printf("#%d %s\n", tcNum, result);
+		}
+	}
+}
+*/
