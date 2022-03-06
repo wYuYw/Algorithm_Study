@@ -22,12 +22,22 @@ public class SWEA_D3_6485 {
 				busStop[p][0] = sc.nextInt();
 			}
 			
+			/* 처음 작성한 코드
 			for(int n=0; n<N; n++) {
 				for(int i=busRoute[n][0]; i<=busRoute[n][1]; i++) {
 					for(int p=0; p<P; p++) {
 						if(busStop[p][0] == i) {
 							busStop[p][1]++; 
 						}
+					}
+				}
+			}
+			*/
+			// 실행 시간 줄일 수 있는 코드
+			for(int n=0; n<N; n++) {
+				for(int p=0; p<P; p++) {
+					if (busStop[p][0]>=busRoute[n][0] && busStop[p][0]<=busRoute[n][1]) {
+						busStop[p][1]++;
 					}
 				}
 			}
