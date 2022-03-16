@@ -3,6 +3,8 @@
 # Solution by wYuYw
 
 import heapq
+import sys
+input = lambda: sys.stdin.readline().strip()
 
 n = int(input()) # 1 ≤ N ≤ 200,000
 times = [tuple(map(int, input().split())) for _ in range(n)]
