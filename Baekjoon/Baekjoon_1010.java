@@ -2,6 +2,8 @@
 
 // by SonMinji_220417
 
+import java.util.Scanner;
+
 public class BJ1010 {
 	
 	public static void main(String[] args) {
