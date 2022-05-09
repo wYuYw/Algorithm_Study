@@ -1,6 +1,6 @@
 // 1197. 최소 스패닝 트리
 
-// by SonMinji_220425
+// by SonMinji_220425 - Prim's Algorithm
 
 import java.util.ArrayList;
 import java.util.List;
@@ -95,3 +95,102 @@ public class BJ1197 {
 		System.out.println(minW);
 	}
 }
+
+
+
+// by SonMinji_220509 - Kruskal's Algorithm
+/*
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Scanner;
+
+public class BJ1197re {
+	
+	// 각 정점이 속한 그룹의 대표를 저장할 배열
+	static int[] parent;
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		// 정점의 개수 (1 <= V <= 10,000)
+		// 정점은 1번부터 V번까지 
+		int V = sc.nextInt();
+		// 간선의 개수 (1 <= E <= 100,000)
+		int E = sc.nextInt();
+		// 간선 정보 저장할 배열
+		int[][] edges = new int[E][3];
+		// 배열에 간선 정보 입력
+		for(int e=0; e<E; e++) {
+			// 0번째 열, 1번째 열 : 연결될 두 정점 번호
+			edges[e][0] = sc.nextInt();
+			edges[e][1] = sc.nextInt();
+			// 2번째 열 : 두 정점 연결하는 간선의 가중치
+			edges[e][2] = sc.nextInt();
+		}
+		// 가중치 기준으로 오름차순으로 정렬
+		Arrays.sort(edges, new Comparator<int[]>() {
+			@Override
+			public int compare(int[] o1, int[] o2) {
+				// TODO Auto-generated method stub
+				return o1[2]-o2[2];
+			}
+		});
+		
+		// 각 정점이 속한 그룹의 대표를 저장할 배열
+		parent = new int[V+1];		
+		// 초기화 (makeSet)
+		for(int v=1; v<V+1; v++) {
+			// 처음엔 자기자신이 대표
+			parent[v] = v;
+		}
+		
+		// 선택한 간선 개수
+		int select = 0;
+		// 최소 스패닝 트리의 가중치
+		int w = 0;
+		
+		// 간선 배열이 가중치 기준으로 오름차순으로 정렬되어있으니
+		// 첫 행부터 간선 정보를 체크하여 간선을 선택하거나 선택하지 않음
+		for(int e=0; e<E; e++) {
+			// 연결될 수 있는 두 개의 정점이 속한 각 그룹의 대표 찾음
+			int px = findSet(edges[e][0]);
+			int py = findSet(edges[e][1]);
+			
+			// 연결할 두 정점이 속한 그룹의 대표가 다를 경우
+			// (대표가 같으면 이미 두 정점은 연결되어 있는 것이므로 연결할 필요가 없음)
+			if(px != py) {
+				// 두 정점이 속한 그룹의 대표를 연결하여 두 정점이 같은 그룹에 있게 함
+				union(px, py);
+				// 선택한 간선의 개수 하나 증가
+				select++;
+				// 간선 하나 선택했으니 가중치 추가
+				w += edges[e][2];
+			}
+			
+			// 정점이 V개이므로 V-1개의 간선을 선택하면 모든 정점이 연결된 것이므로 반복문 종료
+			if(select == V-1) {
+				break;
+			}
+		}
+		
+		// 결과 출력
+		System.out.println(w);
+	}
+	
+	// x가 속한 그룹의 대표 찾기
+	public static int findSet(int x) {
+		if(parent[x] != x) {  // x가 속한 그룹의 대표가 x가 아닐 경우
+			// 재귀호출을 통하여 x가 속한 그룹의 대표를 찾아서 대표 저장 배열에 저장함 
+			parent[x] = findSet(parent[x]);
+		}
+		return parent[x];
+	}
+	
+	// x가 속한 그룹과 y가 속한 그룹 합치기
+	public static void union(int x, int y) {
+		// main 메서드에서 union 메서드 사용 시 각 정점이 속한 그룹의 대표 번호를 넘겨주므로 
+		// 그냥 y의 대표를 x로 저장해주면 두 그룹은 연결된 것
+		parent[y] = x;
+	}
+	
+}
+*/
