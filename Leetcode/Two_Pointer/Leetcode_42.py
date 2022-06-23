@@ -20,9 +20,36 @@ class Solution:
                 right -= 1
         
         return volume
+
+# Solution_02 by wYuYw - Two Pointer, split left and right
+
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        
+        volume = 0
+        max_height_idx = height.index(max(height))
+        
+        # left side of max_height
+        left, left_max = 0, height[0]
+        while left < max_height_idx:
+            if height[left] >= left_max:
+                left_max = max(left_max, height[left])
+            else:
+                volume += left_max - height[left]
+            left += 1
+        
+        # right side of max_height
+        right, right_max = len(height) - 1, height[len(height) - 1]
+        while right > max_height_idx:
+            if height[right] >= right_max:
+                right_max = max(right_max, height[right])
+            else:
+                volume += right_max - height[right]
+            right -= 1
+        
+        return volume
       
-      
-# Solution_02 - Using stack
+# Solution_03 - Using stack
 
 class Solution:
     def trap(self, height: List[int]) -> int:
