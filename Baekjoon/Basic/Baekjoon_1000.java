@@ -1,6 +1,6 @@
-# Baekjoon_1000 A+B
+// Baekjoon_1000 A+B
 
-# Solution by wYuYw
+// Solution by wYuYw
 
 import java.util.Scanner;
 
