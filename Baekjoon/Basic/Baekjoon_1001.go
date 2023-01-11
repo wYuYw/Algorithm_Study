@@ -1,4 +1,3 @@
-
 // Baekjoon_1001 A-B
 
 // Solution by wYuYw
