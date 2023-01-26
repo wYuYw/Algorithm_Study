@@ -30,12 +30,6 @@ func main() {
 		}
 	}
 
-	// fmt.Println(input)
-	chars := make([]string, 0, len(counter))
-	for chr := range counter {
-		chars = append(chars, chr)
-	}
-
 	for character, occurrence := range counter {
 		if occurrence > maxVal {
 			maxVal = occurrence
@@ -47,3 +41,4 @@ func main() {
 
 	fmt.Println(res)
 }
+
