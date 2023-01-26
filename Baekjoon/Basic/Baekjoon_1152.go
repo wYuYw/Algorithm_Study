@@ -1,3 +1,7 @@
+// Baekjoon_1152 단어의 개수
+
+// Solution by wYuYw
+
 package main
 
 import (
