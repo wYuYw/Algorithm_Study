@@ -1,27 +1,25 @@
-// Baekjoon_1152 단어의 개수
-
-// Solution by wYuYw
-
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
-  "bufio"
 	"strings"
 )
 
 func main() {
 	var input string
+	var res int
+
 	reader := bufio.NewReader(os.Stdin)
 	input, _ = reader.ReadString('\n')
+	input = strings.TrimSuffix(input, "\n")
 
 	words := strings.Split(input, " ")
-	var count int
 	for i := range words {
-		if words[i] != "\n" && words[i] != "" {
-			count++
+		if words[i] != "" {
+			res++
 		}
 	}
-	fmt.Println(count)
+	fmt.Println(res)
 }
